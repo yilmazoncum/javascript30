@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drum</title>
+</head>
+
+<body>
+    <div class="drum">
+        <div class="keys">     
+                  
+            <button type="button" value="a">A</button>
+            <button type="button" value="s">S</button>
+            <button type="button" value="d">D</button>
+            <button type="button" value="f">F</button>
+            <button type="button" value="g">G</button>
+            <button type="button" value="h">H</button>
+            <button type="button" value="j">J</button>
+            <button type="button" value="k">K</button>
+           
+        </div>
+    </div>
+
+
+    <audio src="sounds/do.wav"id="doSound"></audio>
+    <audio src="sounds/re.wav"id="reSound"></audio>
+    <audio src="sounds/mi.wav"id="miSound"></audio>
+    <audio src="sounds/fa.wav"id="faSound"></audio>
+    <audio src="sounds/sol.wav"id="solSound"></audio>
+    <audio src="sounds/la.wav"id="laSound"></audio>
+    <audio src="sounds/si.wav"id="siSound"></audio>
+
+
+    <script src="app.js"></script>
+</body>
+
+<style>
+    .drum{
+        background-color: aqua;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        
+    }
+    button{
+        height: 100px;
+        width: 100px ;
+    }
+    
+</style>
+
+</html>
