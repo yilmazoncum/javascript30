@@ -2,54 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>drum</title>
 </head>
 
 <body>
     <div class="drum">
-        <div class="keys">     
-                  
-            <button type="button" value="a">A</button>
-            <button type="button" value="s">S</button>
-            <button type="button" value="d">D</button>
-            <button type="button" value="f">F</button>
-            <button type="button" value="g">G</button>
-            <button type="button" value="h">H</button>
-            <button type="button" value="j">J</button>
-            <button type="button" value="k">K</button>
-           
+        <div class="keys">
+            <button type="button" value="a">
+                A
+                <div class="note-button">
+                    <span class="notes">DO</span>
+                </div>
+            </button>
+            <button type="button" value="s">
+                S
+                <div class="note-button">
+                    <span class="notes">RE</span>
+                </div>
+            </button>
+            <button type="button" value="d">
+                D
+                <div class="note-button">
+                    <span class="notes">MI</span>
+                </div>
+            </button>
+            <button type="button" value="f">
+                F
+                <div class="note-button">
+                    <span class="notes">FA</span>
+                </div>
+            </button>
+            <button type="button" value="g">
+                G
+                <div class="note-button">
+                    <span class="notes">SOL</span>
+                </div>
+            </button>
+            <button type="button" value="h">
+                H
+                <div class="note-button">
+                    <span class="notes">LA</span>
+                </div>
+            </button>
+            <button type="button" value="j">
+                J
+                <div class="note-button">
+                    <span class="notes">TI</span>
+                </div>
+            </button>
         </div>
     </div>
 
-
-    <audio src="sounds/do.wav"id="doSound"></audio>
-    <audio src="sounds/re.wav"id="reSound"></audio>
-    <audio src="sounds/mi.wav"id="miSound"></audio>
-    <audio src="sounds/fa.wav"id="faSound"></audio>
-    <audio src="sounds/sol.wav"id="solSound"></audio>
-    <audio src="sounds/la.wav"id="laSound"></audio>
-    <audio src="sounds/si.wav"id="siSound"></audio>
-
+    <audio data-key="65" src="sounds/do.wav"></audio>
+    <audio data-key="83" src="sounds/re.wav"></audio>
+    <audio data-key="68" src="sounds/mi.wav"></audio>
+    <audio data-key="70" src="sounds/fa.wav"></audio>
+    <audio data-key="71" src="sounds/sol.wav"></audio>
+    <audio data-key="72" src="sounds/la.wav"></audio>
+    <audio data-key="74" src="sounds/si.wav"></audio>
 
     <script src="app.js"></script>
 </body>
 
 <style>
-    .drum{
-        background-color: aqua;
+    html {
+        font-size: 10px;
+        background: url('./background.jpg');
+        background-size: cover;
+    }
+
+    .drum {
         position: absolute;
-        top:50%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50% , -50%);
-        
+        transform: translate(-50%, -50%);
+        padding: 20px;
     }
-    button{
-        height: 100px;
-        width: 100px ;
+
+    button {
+        margin: 10px;
+        height: 110px;
+        width: 110px;
+
+        border-radius: 11px;
+        transition: all .07s ease;
+        background: rgba(102, 6, 6, 0.719);
+        text-shadow: 0 0 .1rem black;
+
+        font: 1em sans-serif;
     }
+
+    .note-button {
+        padding: 10px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: black;
+    }
+
+    .playing {
+        transform: scale(1.1);
+        border-color: #ff0000;
+        box-shadow: 0 0 1.5rem #ff0000;
+    }
+
     
 </style>
 
