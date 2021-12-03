@@ -11,7 +11,7 @@ function setDate() {
     minRotate = ((now.getMinutes())*6);//6 degree comes from 360deg/60minutes
     minHand.style.transform = `rotate(${minRotate}deg)`;
 
-    hourRotate =((now.getMinutes())*15)-15;
+    hourRotate =((now.getHours())*30); // 30degree comes from 360deg/12hours
     hourHand.style.transform = `rotate(${hourRotate}deg)`;
 
 }
