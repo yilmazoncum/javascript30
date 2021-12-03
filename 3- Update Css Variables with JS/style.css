@@ -1,0 +1,16 @@
+.main{
+    background-color: brown;
+    width: 50em;
+    height: 28em;
+}
+
+.photo{
+       background: url('./image1.jpg');
+       background-repeat: no-repeat;
+       background-size: 50em 30em ;   
+         /* 50 - 28  */
+       width: 50em;
+       height: 28em;
+       border: 2px solid;
+       filter: blur(0px);
+    }

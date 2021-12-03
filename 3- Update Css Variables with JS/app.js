@@ -1,22 +1,17 @@
 const color = document.getElementById("color");
 const spacing = document.getElementById("spacing");
 const blur = document.getElementById("blur");
-
-
-console.log(color.value);
-console.log(spacing.value);
-console.log(blur.value);
-
+const mainDiv = document.querySelector(".main");
+const photoDiv = document.querySelector(".photo");
 
 color.addEventListener("change",()=>{
-    console.log("anan");
     console.log(color.value);
+    mainDiv.style.backgroundColor = color.value;
 })
 spacing.addEventListener("change",()=>{
-    console.log("anan2");
     console.log(spacing.value);
+    photoDiv.style.backgroundSize =`${50*(spacing.value/100)}em ${30*(spacing.value/100)}em`;
 })
 blur.addEventListener("change",()=>{
-    console.log("anan3");
-    console.log(blur.value);
+      photoDiv.style.filter =`blur(${blur.value/10}px)`;
 })
