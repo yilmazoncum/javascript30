@@ -1,3 +1,7 @@
+body{
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
 .circle {
   float: left;
   width: 400px;
@@ -14,7 +18,20 @@
   align-items: center;
   display: flex;
 }
-    
+#dot{
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  shape-outside: circle();
+  clip-path: circle();
+  background: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
 .clock {
   justify-content: center;
   align-items: center;
@@ -30,9 +47,9 @@
 #hour-hand{
     position: absolute;
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, blue 50%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, black 50%);
     height: 300px;
-    width: 7px;
+    width: 5;
     z-index: 2;
     transform : rotate(0deg);
 }
@@ -41,11 +58,11 @@
 #min-hand{
     position: absolute;
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, green 50%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, black 50%);
     transform : rotate(0deg);
     height: 360px;
     width: 7px;
-    z-index: 5;
+    z-index: 6;
 }
 #sec-hand{
     position: absolute;
@@ -54,4 +71,5 @@
     transform-origin: rotate(0deg) ;
     height: 400px;
     width: 3px;
+    z-index: 7;
 }
