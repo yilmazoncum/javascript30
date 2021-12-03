@@ -34,7 +34,7 @@
     height: 300px;
     width: 7px;
     z-index: 2;
-    transform : rotate(45deg);
+    transform : rotate(0deg);
 }
 
 
@@ -42,7 +42,7 @@
     position: absolute;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 50%, green 50%);
-    transform : rotate(90deg);
+    transform : rotate(0deg);
     height: 360px;
     width: 7px;
     z-index: 5;
@@ -51,7 +51,7 @@
     position: absolute;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 50%, red 50%);
-    transform-origin: rotate(90deg) ;
+    transform-origin: rotate(0deg) ;
     height: 400px;
     width: 3px;
 }
