@@ -25,30 +25,33 @@
 
 .hands{     
     border-radius: 50%;
-    margin-bottom: 200px;
     position: absolute;
 }
 #hour-hand{
     position: absolute;
-    height: 360px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, blue 50%);
+    height: 300px;
     width: 7px;
     z-index: 2;
-    transform-origin: 100%;
+    transform : rotate(45deg);
 }
 
 
 #min-hand{
     position: absolute;
-    background-color: green;
-    transform-origin: rotate(50deg) ;
-    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, green 50%);
+    transform : rotate(90deg);
+    height: 360px;
     width: 7px;
     z-index: 5;
 }
 #sec-hand{
     position: absolute;
-    background-color: yellow;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, red 50%);
     transform-origin: rotate(90deg) ;
-    height: 200px;
-    width: 7px;
+    height: 400px;
+    width: 3px;
 }
