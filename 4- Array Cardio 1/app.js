@@ -81,5 +81,3 @@
       
     },{}); 
     console.log(totalVehicle);
-  
-  
