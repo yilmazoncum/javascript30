@@ -25,16 +25,21 @@ function search(value) {
 function displayMatches() {
     const matchArr = search(input.value);
 
-    console.log(matchArr);
+    
 
     const html = matchArr.map(place => {
+
+        const regex = new RegExp(input.value,'gi');
+        const cityName = place.city.replace(regex, `<span class="hl">${input.value}</span>`);
+        const stateName = place.state.replace(regex, `<span class="hl">${input.value}</span>`);
+
         return `
         <li>
-            <span class="name"> ${place.city},${place.state},<span>
+            <span class="name"> ${cityName},${stateName},<span>
             <span class="population"> ${place.population}<span>
         </li>
         `;
     }).join('');
-    
+
     suggestions.innerHTML = html;
 }
