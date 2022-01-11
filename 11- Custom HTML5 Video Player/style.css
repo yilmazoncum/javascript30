@@ -10,9 +10,10 @@ html {
     margin: 0;
     padding: 0;
     display: flex;
+    transition-timing-function: cubic-bezier(.57,.59,.36,.72);
+    transition-duration: 900;
     background: #7A419B;
     min-height: 100vh;
-    background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
     background-size: cover;
     align-items: center;
     justify-content: center;
