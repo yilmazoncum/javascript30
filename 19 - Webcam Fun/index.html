@@ -12,6 +12,29 @@
     <div class="photobooth">
         <div class="controls">
             <button onClick="takePhoto()">Take Photo</button>
+
+            <div id = "checkboxes" >
+                <input type="radio" name="effect" value="default"
+                       checked>
+                <label for="default">No Effect</label>
+              </div>
+
+            <div id = "checkboxes" >
+                <input type="radio" name="effect" value="red"
+                       >
+                <label for="red">Red Effect</label>
+              </div>
+              
+              <div id = "checkboxes">
+                <input type="radio" name="effect" value="split">
+                <label for="split">Split Effect</label>
+              </div>
+              
+              <div id = "checkboxes">
+                <input type="radio" name="effect" value="green">
+                <label for="green">Green Screen Effect</label>
+              </div>
+        
             <div class="rgb">
                 <label for="rmin">Red Min:</label>
                 <input type="range" min=0 max=255 name="rmin">

@@ -37,9 +37,9 @@ html {
     width:200px;
   }
   
-  /*
-    Strip!
-  */
+  #checkboxes{
+    display: inline;
+  }
   
   .strip {
     padding: 2rem;
